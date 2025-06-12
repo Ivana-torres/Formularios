@@ -22,7 +22,7 @@ function authlogin(event) {
         return false;
     }
 
-    if (username === "Ivana" && password === "1vanA%") {
+    if (username === "Ivana" && password === "1vanA%123") {
         sessionStorage.setItem("username", username);
         window.location.href = "Dashboard.html";
     } else {
