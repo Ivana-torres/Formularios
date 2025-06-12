@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Suscripción a la Newsletter</title>
+  <link rel="stylesheet" href="estilos.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+</head>
+<body>
+
+<div class="formulario">
+  <h2>Suscripción a la newsletter</h2>
+  <form id="newsletterForm" onsubmit="validarSuscripcion(event)">
+    <label>
+      NOMBRE
+      <input type="text" id="nombre" placeholder="Sólo tu nombre">
+    </label>
+
+    <label>
+      EMAIL
+      <input type="email" id="email" placeholder="Introduzca su correo electrónico">
+    </label>
+
+    <div class="checkbox">
+      <input type="checkbox" id="privacidad">
+      <label for="privacidad"><strong>Sí, acepto la política de privacidad</strong></label>
+    </div>
+
+    <div class="error" id="msgError"></div>
+
+    <button type="submit">Suscribirse</button>
+
+    <div class="info">
+      <strong>Información básica sobre Protección de datos</strong>
+      <p><em>Texto explicativo sobre qué datos se almacenan, quién es el responsable, cuál es su objetivo y legitimación, y cómo se pueden eliminar los datos.</em></p>
+    </div>
+  </form>
+</div>
+
+<script src="./scripts/formulario.js"></script>
+
+</body>
+</html>

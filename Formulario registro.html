@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Formulario de Registro</title>
+  <link rel="stylesheet" href="estilos.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <div class="formulario">
+    <h2>Formulario de registro</h2>
+    <form id="registroForm">
+      <div class="form-row">
+        <input type="text" id="usuario" placeholder="Nombre de usuario" required>
+        <input type="email" id="email" placeholder="Email" required>
+      </div>
+
+      <div class="password-row">
+        <input type="password" id="password" placeholder="Contraseña" required>
+        <div class="toggle-password" id="togglePassword">0</div>
+        <input type="password" id="passwordRepeat" placeholder="Repita contraseña" required>
+      </div>
+
+      <input type="text" id="nombreCompleto" placeholder="Nombre Completo" required>
+
+      <div class="checkbox-label">
+        <input type="checkbox" id="acepto" required>
+        <label for="acepto" class="terms">
+          He leído y acepto los <strong>Términos y Condiciones</strong> y la <strong>Política de Privacidad</strong>
+        </label>
+      </div>
+
+      <div class="checkbox-label">
+        <input type="checkbox" id="noEmails">
+        <label for="noEmails">No quiero recibir correos electrónicos sobre nuevos productos</label>
+      </div>
+
+      <div class="error" id="errorMensaje"></div>
+
+      <button class="btn" type="submit">ACCEDER</button>
+    </form>
+  </div>
+
+ <script src="Scripts/formulario.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="estilos.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <center> 
+    <h1>Bienvenido, <span id="user"></span></h1>
+</center>
+    <script>
+        // Leer el nombre de usuario desde sessionStorage
+        const username = sessionStorage.getItem("username");
+
+        // Mostrar el nombre o "Invitado"
+        document.getElementById("user").innerText = username ? username : "Invitado";
+    </script>
+<div class="formulario">
+    <nav>
+        <ul>
+            <li><a href="pruebas.html">Formulario de Contacto</a></li>
+            <li><a href="Formulario 2.html">Subscripcion de los gmails</a></li>
+            <li><a href="Formulario acceso.html">Acceso a pagina generica </a></li>
+            <li><a href="Formulario registro.html">Formulario para registrarse</a></li>
+        </ul>
+</div>        
+</body>
+</html>

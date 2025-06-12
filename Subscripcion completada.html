@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gracias por subscribirte</title>
+  <link rel="stylesheet" href="estilos.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <div class="contenedor">
+    <h2>¡Gracias por subscribirte!</h2>
+    <p><span>Nombre:</span> <span id="nombre"></span></p>
+    <p><span>Email:</span> <span id="email"></span></p>
+    <p id="mensaje"></p>
+    <div class="botones">
+      <button onclick="window.location.href='Formulario 2.html'">Volver al Formulario</button>
+      <button onclick="window.location.href='Dashboard.html'">Ir al Dashboard</button>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById("nombre").textContent = localStorage.getItem("nombre") || "No proporcionado";
+    document.getElementById("email").textContent = localStorage.getItem("email") || "No proporcionado";
+  </script>
+</body>
+</html>
